@@ -13,4 +13,4 @@ jobs:
       - name: Install SQLFluff
         run: "pip install sqlfluff==0.9.4"
       - name: Lint sql
-        run: "sqlfluff lint sql --dialect bigquery"
+        run: "sqlfluff lint sample_sql --dialect bigquery"
