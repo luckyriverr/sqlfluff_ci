@@ -8,15 +8,15 @@ WITH purchases AS (
   UNION ALL
   SELECT DATETIME('2021-09-02 12:23:34') AS timestamp, 200 AS amount  -- noqa: L036, L029
   UNION ALL
-  SELECT DATETIME('2021-09-04 11:11:11') AS timestamp, 700 AS amount
+  SELECT DATETIME('2021-09-04 11:11:11') AS timestamp, 700 AS amount  -- noqa: L036, L029
 )
 
 SELECT
-  DATE(timestamp) AS date,
+  DATE(timestamp) AS dt,
   SUM(amount) AS amount
 FROM
   purchases
 GROUP BY
-  date
+  dt
 ORDER BY
-  date
+  dt
