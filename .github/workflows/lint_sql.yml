@@ -1,9 +1,9 @@
-name: Lint SQL
+name: Lint sql
 
 on: [pull_request]
 
 jobs:
-  lint-models:
+  lint-sql:
     runs-on: ubuntu-latest
     steps:
       - uses: "actions/checkout@v2"
