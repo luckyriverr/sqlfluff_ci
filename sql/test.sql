@@ -1,6 +1,6 @@
 -- test
 SELECT
   1 AS id,
-  'name' AS name
+   'name' AS name
 FROM
   test
