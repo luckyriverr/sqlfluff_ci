@@ -1,4 +1,4 @@
-name: Lint Models
+name: Lint SQL
 
 on: [pull_request]
 
@@ -11,6 +11,6 @@ jobs:
         with:
             python-version: "3.8"
       - name: Install SQLFluff
-        run: "pip install sqlfluff==0.3.6"
+        run: "pip install sqlfluff==0.9.4"
       - name: Lint sql
         run: "sqlfluff lint sql"

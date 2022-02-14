@@ -6,5 +6,5 @@
 
 ```sh
 docker pull sqlfluff/sqlfluff:latest
-docker run -it --rm -v $PWD:/sql sqlfluff/sqlfluff:latest lint sql/
+docker run -it --rm -v $PWD:/sql sqlfluff/sqlfluff:latest lint sql
 ```
