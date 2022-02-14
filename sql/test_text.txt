@@ -1,0 +1,6 @@
+-- `.sql` 以外は無視してくれる
+SELECT
+  hoge,
+      moge
+    FROM
+  table
