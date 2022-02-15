@@ -18,7 +18,14 @@ docker pull sqlfluff/sqlfluff:0.9.4
 docker run -it --rm -v $PWD:/sql sqlfluff/sqlfluff:0.9.4 lint sample_sql --dialect bigquery
 ```
 
-c.f <https://hub.docker.com/r/sqlfluff/sqlfluff>
+c.f　<https://hub.docker.com/r/sqlfluff/sqlfluff>
+
+## CIでLinterを動かす
+
+- Github ActionsでPull RequestをトリガーにLinter動かす
+- ワークフローは .github/workflows/lint_sql.yml を参照
+
+c.f <https://github.com/sqlfluff/sqlfluff-github-actions/tree/main/menu_of_workflows/sunrise_movement>
 
 ## ルール
 
@@ -33,9 +40,7 @@ c.f <https://hub.docker.com/r/sqlfluff/sqlfluff>
 
 c.f <https://docs.sqlfluff.com/en/stable/rules.html#inline-ignoring-errors>
 
-## CIでLinterを動かす
+- 個別にルール定義を変更も可能
+- 例として、当リポジトリの `.sqlfluff`　を参照
 
-- Github ActionsでPull RequestをトリガーにLinter動かす
-- ワークフローは .github/workflows/lint_sql.yml を参照
-
-c.f <https://github.com/sqlfluff/sqlfluff-github-actions/tree/main/menu_of_workflows/sunrise_movement>
+c.f <https://docs.sqlfluff.com/en/stable/configuration.html#configuration>
